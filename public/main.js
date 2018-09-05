@@ -47,7 +47,7 @@ if(chartContainer) {
 	chart.render();
 
 	// Enable pusher logging - don't include this in production
-  Pusher.logToConsole = true;
+  Pusher.logToConsole = false;
 
   const pusher = new Pusher('73d8e2955b06547a3d6d', {
     cluster: 'ap1',
