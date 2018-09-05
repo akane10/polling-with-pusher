@@ -21,7 +21,6 @@ form.addEventListener('submit', (e) => {
 	.catch(e => console.log(e.message));
 });
 
-
 let dataPoints = [
 	{label: 'FC Barcelona', y: 0},
 	{label: 'Real Madrid', y: 0},
