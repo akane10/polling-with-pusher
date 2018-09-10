@@ -9,7 +9,7 @@ form.addEventListener('submit', (e) => {
 		club: choice
 	};
 
-	fetch('http://localhost:3000/', {
+	fetch('https://demo-polling.herokuapp.com/', {
 		method: 'post',
 		body: JSON.stringify(data),
 		headers: new Headers({
