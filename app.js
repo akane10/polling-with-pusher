@@ -13,4 +13,11 @@ app.use(cors());
 const poll = require('./routes/poll');
 app.use('/', poll);
 
+const reqTimer = setTimeout(function wakeUp() {
+	request("https://demo-polling.herokuapp.com", () => {
+	  console.log("WAKE UP DYNO");
+	});
+	return reqTimer = setTimeout(wakeUp, 1200000);
+}, 1200000);
+
 module.exports = app;
